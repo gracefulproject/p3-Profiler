@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtSpiNNProfilerMDI</class>
+ <widget class="QMainWindow" name="QtSpiNNProfilerMDI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SpiNNaker Profiler</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QMdiArea" name="mdiArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1031</width>
+      <height>751</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Widgets">
+    <property name="title">
+     <string>&amp;Widgets</string>
+    </property>
+    <addaction name="action_Tubotron"/>
+    <addaction name="action_Temperature"/>
+    <addaction name="action_Utilization"/>
+    <addaction name="action_Frequency"/>
+    <addaction name="action_CoreSwitcher"/>
+   </widget>
+   <widget class="QMenu" name="menu_Config">
+    <property name="title">
+     <string>&amp;Config</string>
+    </property>
+    <addaction name="action_SaveData"/>
+    <addaction name="action_SelectBoard"/>
+   </widget>
+   <addaction name="menu_Widgets"/>
+   <addaction name="menu_Config"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Tubotron">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Tubotron</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="action_Temperature">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tem&amp;perature</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="action_Utilization">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Utilization</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_Frequency">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Frequency</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </action>
+  <action name="action_SaveData">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Save Data</string>
+   </property>
+  </action>
+  <action name="action_SelectBoard">
+   <property name="text">
+    <string>Select &amp;Board</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="action_CoreSwitcher">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Core Switcher</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
